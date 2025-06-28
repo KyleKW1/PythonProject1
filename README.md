@@ -2,10 +2,10 @@
 
 ## Kyle Watson Financial Tracker
 
-### 🚀 **Project Overview**
+### **Project Overview**
 An interactive finance tracker built with Streamlit that processes bank statements (CSV/PDF), categorises transactions, visualises summaries, and sends email alerts.
 
-### ✅ **Features**
+### **Features**
 - Upload CSV or PDF statements
 - Data cleaning and categorisation
 - Pie chart visualisation of expenses
@@ -14,7 +14,7 @@ An interactive finance tracker built with Streamlit that processes bank statemen
 
 ---
 
-### ⚙️ **Setup Instructions**
+### ⚙**Setup Instructions**
 
 1. **Clone the repository:**
 ```bash
@@ -34,7 +34,7 @@ streamlit run Fin.py
 
 ---
 
-### ☁️ **Deploy to Streamlit Cloud**
+### ☁**Deploy to Streamlit Cloud**
 
 1. Push all files (`Fin.py`, `requirements.txt`) to GitHub.
 2. Go to [Streamlit Cloud](https://share.streamlit.io).
@@ -52,13 +52,13 @@ smtp_port: 587
 
 ---
 
-### 🔒 **Important Notes:**
+### **Important Notes:**
 - For Gmail, create an **App Password** instead of using your main password for security.
 - Ensure pdfkit dependencies are installed on the server if you expand PDF export functionality.
 
 ---
 
-### ✨ **Author**
+### **Author**
 **Kyle Watson Financial Tracker**
 
 ---
