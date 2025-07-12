@@ -1,3 +1,6 @@
+from PIL import Image
+import requests
+from io import BytesIO
 import streamlit as st
 
 st.set_page_config(page_title="Finance Hub", layout="wide")
@@ -150,10 +153,11 @@ if option == "Spending Analysis":
     st.title("Personal Finance Tracker")
 
     # Load the image from the file path
-    image = Image.open("https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/670a5f3911255e001d079ce3.jpg)
-
+    url = "https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/670a5f3911255e001d079ce3.jpg"
+    response = requests.get(url)
+    image = Image.open(BytesIO(response.content))
     # Display the image in Streamlit
-    st.image(image, use_container_width=True)
+    #st.image(image, use_container_width=True)
 
     uploaded_files = st.file_uploader(
         "Upload CSV or PDF files",
