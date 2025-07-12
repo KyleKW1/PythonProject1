@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Finance Hub", layout="wide")
 
-st.title("💼 Welcome to Finance Hub")
+st.title(" Welcome to Finance Hub ")
 
 st.markdown("Choose a feature below to get started:")
 
@@ -12,7 +12,7 @@ option = st.radio(
     index=0
 )
 
-if option == "📊 Spending Analysis":
+if option == "Spending Analysis":
     st.markdown("You selected **Spending Analysis**.")
     import pandas as pd
     import plotly.express as px
@@ -150,7 +150,7 @@ if option == "📊 Spending Analysis":
     st.title("Personal Finance Tracker")
 
     # Load the image from the file path
-    image = Image.open("/Users/kyle/Documents/New Life/40450-1067x800.jpg")
+    image = Image.open("https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/670a5f3911255e001d079ce3.jpg)
 
     # Display the image in Streamlit
     st.image(image, use_container_width=True)
